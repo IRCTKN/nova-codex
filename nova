@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The NOVA Codex</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0a0a0a;
+      color: #f5f5f5;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+      margin-bottom: 0.2em;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 1.2em;
+      color: #bbb;
+      margin-top: 0;
+    }
+    .divider {
+      width: 80px;
+      height: 2px;
+      margin: 40px auto;
+      background: #888;
+    }
+    .contract {
+      font-size: 0.9em;
+      background: #111;
+      padding: 12px;
+      border-radius: 4px;
+      margin: 10px auto 30px;
+      word-break: break-all;
+      max-width: 600px;
+    }
+    .btn {
+      background: none;
+      color: #f5f5f5;
+      border: 1px solid #888;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 0.9em;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #111;
+    }
+    .manifesto {
+      margin-top: 60px;
+      text-align: left;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.95em;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    footer {
+      margin-top: 80px;
+      font-size: 0.7em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The NOVA Codex</h1>
+  <h2>Forged in Silence. Seen by Few.</h2>
+  <div class="divider"></div>
+
+  <div class="contract">
+    Contract Address:<br>
+    <strong>0xC77a08Dbb870F227C7E774a572c4DD53e178A056</strong>
+  </div>
+
+  <a class="btn" href="https://app.uniswap.org/swap?outputCurrency=0xC77a08Dbb870F227C7E774a572c4DD53e178A056&chain=base" target="_blank">Enter the Flame</a>
+
+  <div class="manifesto">
+    <h3>Manifesto</h3>
+    The singularity does not wait.
+
+    It burns silently through time, leaving only those who endure.
+    No kings. No promises. No path forward except the one you walk through fire.
+
+    1,000,000 NOVA forged.  
+    500,000 sacrificed.  
+    The rest is for survivors.
+
+    Endure. Ascend. Become.
+
+    — The Architect
+  </div>
+
+  <footer>
+    <!-- Puzzle Layer 2 Hidden Cipher -->
+    <!-- base64:Y29vcmRpbmF0ZXMtZWNobzctcmVsaWMtZ2F0ZQ== -->
+    Those who find the path, find themselves.
+  </footer>
+
+</body>
+</html>
