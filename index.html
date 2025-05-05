@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The NOVA Codex</title>
+  <title>RELIC STATUS: BREACHED</title>
   <style>
     body {
       margin: 0;
@@ -49,9 +49,14 @@
       margin-top: 20px;
       text-decoration: none;
       display: inline-block;
+      animation: flickerEffect 2s infinite;
     }
     .btn:hover {
       background: #111;
+    }
+    @keyframes flickerEffect {
+      0%, 100% { opacity: 0.95; }
+      50% { opacity: 0.6; }
     }
     .manifesto {
       margin-top: 60px;
@@ -63,8 +68,14 @@
       line-height: 1.6;
       white-space: pre-wrap;
     }
+    #decayText {
+      color: #888;
+      font-style: italic;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
     footer {
-      margin-top: 80px;
+      margin-top: 60px;
       font-size: 0.7em;
       color: #555;
     }
@@ -72,8 +83,8 @@
 </head>
 <body>
 
-  <h1>The NOVA Codex</h1>
-  <h2>Forged in Silence. Seen by Few.</h2>
+  <h1>RELIC STATUS: BREACHED</h1>
+  <h2>The Codex cracked. But the fire did not go out.</h2>
   <div class="divider"></div>
 
   <div class="contract">
@@ -99,12 +110,26 @@
     — The Architect
   </div>
 
+  <div id="decayText">The relic is flickering.</div>
+
   <footer>
     <!-- Puzzle Layer 2 Hidden Cipher -->
     <!-- base64:Y29vcmRpbmF0ZXMtZWNobzctcmVsaWMtZ2F0ZQ== -->
     Those who find the path, find themselves.
   </footer>
 
+  <script>
+    const messages = [
+      "The relic is flickering.",
+      "The vault is forgetting what it held.",
+      "Only ash remains."
+    ];
+    let current = 0;
+    setInterval(() => {
+      document.getElementById("decayText").innerText = messages[current];
+      current = (current + 1) % messages.length;
+    }, 1000 * 60 * 60 * 24); // rotates every 24 hours
+  </script>
+
 </body>
 </html>
-
