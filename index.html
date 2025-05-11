@@ -115,10 +115,14 @@
     Endure. Ascend. Become.<br><br>
 
     — The Architect
+
+    <p style="margin-top:20px; font-style:italic; color:#888;">
+      The Codex was found. But never claimed.
+    </p>
   </div>
 
   <div id="decayText">The relic is flickering.</div>
-  <div id="relicRune">ω-phase: drift 2 | burn trace active</div>
+  <div id="relicRune">ω-phase: drift 3 | silence archived</div>
 
   <footer>
     <!-- Puzzle Layer 2 Hidden Cipher -->
@@ -136,7 +140,7 @@
     setInterval(() => {
       document.getElementById("decayText").innerText = messages[current];
       current = (current + 1) % messages.length;
-    }, 1000 * 60 * 60 * 24); // rotates every 24 hours
+    }, 1000 * 60 * 60 * 24);
   </script>
 
 </body>
